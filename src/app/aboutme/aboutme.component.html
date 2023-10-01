@@ -1,0 +1,29 @@
+<main>
+    <div class="bg-blue-300">
+        <div class="flex items-center h-screen mx-auto w-9/12 justify-center flex-col">
+            <div>
+                <div class="flex items-center">
+                    <svg class="stroke-gray-800 stroke-10 h-5 w-5">
+                        <line x1="0" y1="10px" x2="10px" y2="10px"/>
+                    </svg>
+                    <h2 class="font-extralight uppercase text-white">Services</h2>
+                </div>
+                <h1 class="text-3xl font-bold uppercase text-white">Specialized in</h1>
+            </div>
+        </div>
+
+        <div class="bg-gray-300 w-9/12 mx-auto">
+            <div class="flex items-center flex-row">
+                <mat-card *ngFor="let service of services">
+                    <mat-card-header>
+                        <mat-card-title>{{service.title}}</mat-card-title>
+                    </mat-card-header>
+                    <img mat-card-image [src]="service.urlImage" alt="">
+                    <mat-card-content>
+                        <p>{{service.desc}}</p>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</main>
