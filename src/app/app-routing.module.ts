@@ -8,7 +8,8 @@ import { SkillComponent } from './skill/skill.component';
 import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
-  { path: "home", component: HomeComponent }
+  { path: "", component: HomeComponent }
+  , { path: "home", component: HomeComponent }
   , { path: "services", component: AboutmeComponent }
   , { path: "experience", component: ExpericenceComponent }
   , { path: "skill", component: SkillComponent }
