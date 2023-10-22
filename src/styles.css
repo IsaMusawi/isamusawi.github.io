@@ -10,10 +10,17 @@ body {
     margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
 }
 
-.mat-toolbar-single-row {
+/* .mat-toolbar-single-row {
     display: flex;
 }
 
 .mat-toolbar-multiple-row {
     flex-direction: column;
+} */
+
+.card-columns{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
 }
+

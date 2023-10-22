@@ -1,6 +1,6 @@
-<main class="bg-blue-500">
-    <div class="w-9/12 flex items-center h-screen mx-auto relative-top-48">
-        <div class="pt-8 basis-5/8">
+<div class="bg-blue-500 py-32">
+    <div class="w-9/12 grid items-center mx-auto sm:grid-cols-2 md:grid-cols-3">
+        <div class="col-span-2 py-10">
             <!-- Introduction -->
             <div class="flex items-center">
                 <svg class="stroke-gray-400 stroke-2 h-5 w-5">
@@ -22,8 +22,10 @@
         </div>
 
         <!-- avatar -->
-        <div class="basis-3/8">
-            <img class="ms-auto" src="assets/img/self.jpg" alt="self">
+        <div class="flex items-center mx-auto sm:col-span-2 md:col-span-1">
+            <div class="flex items-center">
+                <img class="ms-auto rounded-3xl w-96" src="assets/img/self.jpg" alt="self">
+            </div>
         </div>
     </div>    
-</main>
+</div>

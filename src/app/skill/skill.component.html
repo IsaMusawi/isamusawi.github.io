@@ -1,1 +1,24 @@
-<p>skill works!</p>
+<div class="bg-blue-500 pt-24 pb-24">
+    <div class="flex mx-auto items-center flex-col w-9/12">
+        <div class="flex mx-auto justify-center">
+            <div class="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <div *ngFor="let skill of skills">
+                    <div class="flex py-10 flex-col rounded-lg shadow-lg">
+                        <mat-card class="flex w-40 h-60">
+                            <div class="gap-2 py-1 text-center">
+                                <div class="flex justify-center items-center rounded-xl bg-gray-400">
+                                    <img class="w-full" [src]="skill.urlImg" alt="">
+                                </div> 
+                                <div class="flex justify-center font-light pt-5">
+                                    <mat-card-header>
+                                        <mat-card-title>{{skill.title}}</mat-card-title>
+                                    </mat-card-header>
+                                </div>
+                            </div>
+                        </mat-card>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

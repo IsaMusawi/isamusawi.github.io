@@ -6,14 +6,15 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ExpericenceComponent } from './expericence/expericence.component';
 import { SkillComponent } from './skill/skill.component';
 import { ContactComponent } from './contact/contact.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
-  { path: "", component: HomeComponent }
+  { path: "", redirectTo: '/home', pathMatch: 'full' }
   , { path: "home", component: HomeComponent }
   , { path: "services", component: AboutmeComponent }
-  , { path: "experience", component: ExpericenceComponent }
   , { path: "skill", component: SkillComponent }
   , { path: "contact", component: ContactComponent }
+  , { path: "**", component: PageNotFoundComponent }
 ];
 
 @NgModule({

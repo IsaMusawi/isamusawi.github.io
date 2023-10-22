@@ -15,13 +15,14 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ExpericenceComponent } from './expericence/expericence.component';
 import { SkillComponent } from './skill/skill.component';
 import { ContactComponent } from './contact/contact.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 @NgModule({
   declarations: [
     AppComponent
     , HomeComponent
-    , HeaderComponent, AboutmeComponent, ExpericenceComponent, SkillComponent, ContactComponent
+    , HeaderComponent, AboutmeComponent, ExpericenceComponent, SkillComponent, ContactComponent, PageNotFoundComponent
   ],
   imports: [
     BrowserModule
