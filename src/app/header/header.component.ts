@@ -8,6 +8,12 @@ import { Component, HostListener, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   isMobile: boolean = false;
 
+  showMenu = false;
+
+  toggleNavbar(){
+    this.showMenu = !this.showMenu;
+  }
+
   constructor() { }
 
   ngOnInit(): void {

@@ -24,3 +24,16 @@ body {
     gap: 16px;
 }
 
+/* Tambahkan warna latar belakang, padding, dan border-radius */
+.btn-pie {
+    background-color: #3490dc; /* Ganti dengan warna yang Anda inginkan */
+    padding: 10px 20px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+  /* Tambahkan hover effect */
+.btn-pie:hover {
+    background-color: #2779bd; /* Ganti dengan warna hover yang Anda inginkan */
+}
+

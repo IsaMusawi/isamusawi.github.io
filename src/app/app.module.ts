@@ -5,7 +5,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog'; 
 import { MatExpansionModule } from '@angular/material/expansion';
+import { ScrollingModule } from '@angular/cdk/scrolling'; 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,13 +18,14 @@ import { ExpericenceComponent } from './expericence/expericence.component';
 import { SkillComponent } from './skill/skill.component';
 import { ContactComponent } from './contact/contact.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PopupComponent } from './popup/popup.component';
 
 
 @NgModule({
   declarations: [
     AppComponent
     , HomeComponent
-    , HeaderComponent, AboutmeComponent, ExpericenceComponent, SkillComponent, ContactComponent, PageNotFoundComponent
+    , HeaderComponent, AboutmeComponent, ExpericenceComponent, SkillComponent, ContactComponent, PageNotFoundComponent, PopupComponent
   ],
   imports: [
     BrowserModule
@@ -33,6 +36,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     , MatInputModule
     , MatCardModule
     , MatExpansionModule
+    , ScrollingModule
+    , MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,12 @@
 <div class="bg-blue-500 py-32">
     <div class="w-9/12 grid items-center mx-auto sm:grid-cols-2 md:grid-cols-3">
+        <!-- avatar -->
+        <div class="flex items-center mx-auto sm:col-span-2 md:col-span-1">
+            <div class="flex items-center">
+                <img class="ms-auto rounded-3xl w-96" src="assets/img/self.jpg" alt="self">
+            </div>
+        </div>
+
         <div class="col-span-2 py-10">
             <!-- Introduction -->
             <div class="flex items-center">
@@ -19,12 +26,31 @@
                 <img class="w-6 h-6 bg-gray-300 rounded-md" src="assets/img/icons8-github-48.png" alt="">
                 <img class="w-6 h-6 bg-gray-300 rounded-md" src="assets/img/icons8-instagram-48.png" alt="">
             </div>
-        </div>
 
-        <!-- avatar -->
-        <div class="flex items-center mx-auto sm:col-span-2 md:col-span-1">
-            <div class="flex items-center">
-                <img class="ms-auto rounded-3xl w-96" src="assets/img/self.jpg" alt="self">
+            <div>
+                <div class="flex flex-row mt-5">
+                    <div class="grid sm:gap-5 sm:grid-cols-1 md:grid-cols-3 space-x-5 py-10">
+                        <button mat-raised-button 
+                            class="rounded-full bg-blue-800 to-blue-100 p-6 text-white hover:bg-yellow-600 w-50 h-20" 
+                            (click)="openPopupSpecialied()">
+                            Specialized
+                        </button>
+                        
+                        <button mat-raised-button 
+                            class="rounded-full bg-blue-800 to-blue-100 p-6 text-white hover:bg-yellow-600 w-50 h-20 overflow-auto max-w-none" 
+                            (click)="openPopupSkill()">
+                            <div class="w-full">
+                                Technical Skill
+                            </div>                    
+                        </button>
+        
+                        <button mat-raised-button 
+                            class="rounded-full bg-blue-800 to-blue-100 p-6 text-white hover:bg-yellow-600 w-50 h-20 overflow-auto max-w-none" 
+                            (click)="openPopupExperience()">
+                            Experience
+                        </button>
+                    <div>
+                </div>
             </div>
         </div>
     </div>    
