@@ -1,9 +1,9 @@
-<div class="bg-blue-500 py-32">
+<div class="bg-blue-500 py-32 w-full h-full">
     <div class="w-9/12 grid items-center mx-auto sm:grid-cols-2 md:grid-cols-3">
         <!-- avatar -->
         <div class="flex items-center mx-auto sm:col-span-2 md:col-span-1">
             <div class="flex items-center">
-                <img class="ms-auto rounded-3xl w-96" src="assets/img/self.jpg" alt="self">
+                <img class="rounded-3xl w-96" src="assets/img/self.jpg" alt="self">
             </div>
         </div>
 
@@ -16,7 +16,13 @@
                 <h2 class="text-3xl font-bold uppercase pb-2 text-white">{{homeModel.name}}</h2>
             </div>
             <h3 class="text-3xl font-extralight tracking-widest pb-2 text-gray-200">{{homeModel.title}}</h3>
-            <p class="font-light text-xl text-white">
+            <p class="font-light text-xl text-white py-10">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Sunt soluta commodi veritatis, omnis ducimus in odio quisquam voluptatem, 
+                pariatur qui provident eligendi aspernatur impedit ut corporis sint porro corrupti quae.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Sunt soluta commodi veritatis, omnis ducimus in odio quisquam voluptatem, 
+                pariatur qui provident eligendi aspernatur impedit ut corporis sint porro corrupti quae.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Sunt soluta commodi veritatis, omnis ducimus in odio quisquam voluptatem, 
                 pariatur qui provident eligendi aspernatur impedit ut corporis sint porro corrupti quae.
@@ -29,26 +35,32 @@
 
             <div>
                 <div class="flex flex-row mt-5">
-                    <div class="grid sm:gap-5 sm:grid-cols-1 md:grid-cols-3 space-x-5 py-10">
-                        <button mat-raised-button 
-                            class="rounded-full bg-blue-800 to-blue-100 p-6 text-white hover:bg-yellow-600 w-50 h-20" 
-                            (click)="openPopupSpecialied()">
-                            Specialized
-                        </button>
+                    <div class="grid sm:gap-5 sm:grid-cols-1 md:grid-cols-3 py-10">
+                        <div class="py-5 w-40 h-32 rounded-3xl">
+                            <button mat-raised-button 
+                                class="rounded-full bg-blue-800 to-blue-100 p-6 text-white hover:bg-yellow-600 w-full h-full" 
+                                (click)="openPopupSpecialied()">
+                                Specialized
+                            </button>
+                        </div>
                         
-                        <button mat-raised-button 
-                            class="rounded-full bg-blue-800 to-blue-100 p-6 text-white hover:bg-yellow-600 w-50 h-20 overflow-auto max-w-none" 
-                            (click)="openPopupSkill()">
-                            <div class="w-full">
-                                Technical Skill
-                            </div>                    
-                        </button>
-        
-                        <button mat-raised-button 
-                            class="rounded-full bg-blue-800 to-blue-100 p-6 text-white hover:bg-yellow-600 w-50 h-20 overflow-auto max-w-none" 
-                            (click)="openPopupExperience()">
-                            Experience
-                        </button>
+                        <div class="py-5 w-40 h-32">
+                            <button mat-raised-button 
+                                class="rounded-full bg-blue-800 to-blue-100 p-6 text-white hover:bg-yellow-600 w-full h-full" 
+                                (click)="openPopupSkill()">
+                                <div class="w-full">
+                                    Technical Skill
+                                </div>                    
+                            </button>
+                        </div>
+                        
+                        <div class="py-5 w-40 h-32">
+                            <button mat-raised-button 
+                                class="rounded-full bg-blue-800 to-blue-100 p-6 text-white hover:bg-yellow-600 w-full h-full" 
+                                (click)="openPopupExperience()">
+                                Experience
+                            </button>
+                        </div>
                     <div>
                 </div>
             </div>
