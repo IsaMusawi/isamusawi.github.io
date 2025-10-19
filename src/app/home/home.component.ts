@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
 import { Constant } from 'src/constant';
-import { HomeModel } from './../model/homeModel';
+import { HomeModel } from '../model/home-model';
 import { MatDialog } from '@angular/material/dialog';
 import { AboutmeComponent } from '../aboutme/aboutme.component';
-import { SkillComponent } from '../skill/skill.component';
+import { SkillComponent } from '../section/skill/skill.component';
 import { ExpericenceComponent } from '../expericence/expericence.component';
 
 @Component({

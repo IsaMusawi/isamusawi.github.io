@@ -1,13 +1,13 @@
-<div class="bg-blue-500 py-32 w-full h-full">
+<div class="bg-blue-500 py-32 w-full md:h-full">
     <div class="w-9/12 grid items-center mx-auto sm:grid-cols-2 md:grid-cols-3">
         <!-- avatar -->
-        <div class="flex items-center mx-auto sm:col-span-2 md:col-span-1">
+        <div class="flex items-center mx-auto sm:col-span-2 md:col-span-1 gap-3">
             <div class="flex items-center">
-                <img class="rounded-3xl w-96" src="assets/img/self.jpg" alt="self">
+                <img class=" ms-auto rounded-3xl w-96" src="assets/img/self.jpg" alt="self">
             </div>
         </div>
 
-        <div class="col-span-2 py-10">
+        <div class="col-span-2 pt-10">
             <!-- Introduction -->
             <div class="flex items-center">
                 <svg class="stroke-gray-400 stroke-2 h-5 w-5">
@@ -16,7 +16,7 @@
                 <h2 class="text-3xl font-bold uppercase pb-2 text-white">{{homeModel.name}}</h2>
             </div>
             <h3 class="text-3xl font-extralight tracking-widest pb-2 text-gray-200">{{homeModel.title}}</h3>
-            <p class="font-light text-xl text-white py-10">
+            <p class="font-light text-xl text-white pt-10">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Sunt soluta commodi veritatis, omnis ducimus in odio quisquam voluptatem, 
                 pariatur qui provident eligendi aspernatur impedit ut corporis sint porro corrupti quae.
@@ -27,42 +27,40 @@
                 Sunt soluta commodi veritatis, omnis ducimus in odio quisquam voluptatem, 
                 pariatur qui provident eligendi aspernatur impedit ut corporis sint porro corrupti quae.
             </p>
-            <div class="flex flex-row mt-5 space-x-1 ">
+            <!-- <div class="flex flex-row mt-5 space-x-1 ">
                 <img class="w-6 h-6 bg-gray-300 rounded-md" src="assets/img/icons8-linkedin-48.png" alt="">
                 <img class="w-6 h-6 bg-gray-300 rounded-md" src="assets/img/icons8-github-48.png" alt="">
                 <img class="w-6 h-6 bg-gray-300 rounded-md" src="assets/img/icons8-instagram-48.png" alt="">
-            </div>
+            </div> -->
 
-            <div>
-                <div class="flex flex-row mt-5">
-                    <div class="grid sm:gap-5 sm:grid-cols-1 md:grid-cols-3 py-10">
-                        <div class="py-5 w-40 h-32 rounded-3xl">
-                            <button mat-raised-button 
-                                class="rounded-full bg-blue-800 to-blue-100 p-6 text-white hover:bg-yellow-600 w-full h-full" 
-                                (click)="openPopupSpecialied()">
-                                Specialized
-                            </button>
-                        </div>
-                        
-                        <div class="py-5 w-40 h-32">
-                            <button mat-raised-button 
-                                class="rounded-full bg-blue-800 to-blue-100 p-6 text-white hover:bg-yellow-600 w-full h-full" 
-                                (click)="openPopupSkill()">
-                                <div class="w-full">
-                                    Technical Skill
-                                </div>                    
-                            </button>
-                        </div>
-                        
-                        <div class="py-5 w-40 h-32">
-                            <button mat-raised-button 
-                                class="rounded-full bg-blue-800 to-blue-100 p-6 text-white hover:bg-yellow-600 w-full h-full" 
-                                (click)="openPopupExperience()">
-                                Experience
-                            </button>
-                        </div>
-                    <div>
-                </div>
+            <div class="flex flex-row mt-5">
+                <div class="grid sm:gap-1 sm:grid-cols-1 md:grid-cols-3 pb-10">
+                    <div class="w-40 h-24 pt-2">
+                        <button mat-raised-button 
+                            class="rounded-full bg-blue-800 to-blue-100 p-6 text-white hover:bg-yellow-600 w-full h-full" 
+                            (click)="openPopupSpecialied()">
+                            Specialized
+                        </button>
+                    </div>
+                    
+                    <div class="w-40 h-24 pt-2">
+                        <button mat-raised-button 
+                            class="rounded-full bg-blue-800 to-blue-100 p-6 text-white hover:bg-yellow-600 w-full h-full" 
+                            (click)="openPopupSkill()">
+                            <div class="w-full">
+                                Technical Skill
+                            </div>                    
+                        </button>
+                    </div>
+                    
+                    <div class="w-40 h-24 pt-2">
+                        <button mat-raised-button 
+                            class="rounded-full bg-blue-800 to-blue-100 p-6 text-white hover:bg-yellow-600 w-full h-full" 
+                            (click)="openPopupExperience()">
+                            Experience
+                        </button>
+                    </div>
+                <div>
             </div>
         </div>
     </div>    

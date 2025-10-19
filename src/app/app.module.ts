@@ -14,18 +14,26 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
-import { ExpericenceComponent } from './expericence/expericence.component';
-import { SkillComponent } from './skill/skill.component';
 import { ContactComponent } from './contact/contact.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { PopupComponent } from './popup/popup.component';
+import { SkillComponent } from './section/skill/skill.component';
+import { OverviewComponent } from './section/overview/overview.component';
+import { ProjectsComponent } from './section/projects/projects.component';
+import { ExpericenceComponent } from './expericence/expericence.component';
 
 
 @NgModule({
   declarations: [
     AppComponent
     , HomeComponent
-    , HeaderComponent, AboutmeComponent, ExpericenceComponent, SkillComponent, ContactComponent, PageNotFoundComponent, PopupComponent
+    , HeaderComponent
+    , AboutmeComponent
+    , ContactComponent
+    , PageNotFoundComponent
+    , SkillComponent
+    , OverviewComponent
+    , ProjectsComponent
+    , ExpericenceComponent
   ],
   imports: [
     BrowserModule

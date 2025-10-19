@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Constant } from 'src/constant';
-import { SkillModels } from '../model/skillModels';
+import { SkillModels } from '../../model/skill-models';
 
 @Component({
   selector: 'app-skill',
   templateUrl: './skill.component.html',
-  styleUrls: ['./skill.component.css']
 })
 export class SkillComponent implements OnInit {
   skills: SkillModels[] = [];

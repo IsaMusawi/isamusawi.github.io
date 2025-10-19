@@ -18,6 +18,10 @@ body {
     flex-direction: column;
 } */
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .card-columns{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));

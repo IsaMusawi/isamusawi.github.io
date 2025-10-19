@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { ServicesModel } from '../model/servicesModel';
+import { ServicesModel } from '../model/services-model';
 import { Constant } from 'src/constant';
 
 @Component({
