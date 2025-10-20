@@ -66,10 +66,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "portofolioisamusawi:build:production"
+              "buildTarget": "portofolioisamusawi:build:production"
             },
             "development": {
-              "browserTarget": "portofolioisamusawi:build:development"
+              "buildTarget": "portofolioisamusawi:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -77,7 +77,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "portofolioisamusawi:build"
+            "buildTarget": "portofolioisamusawi:build"
           }
         },
         "test": {
